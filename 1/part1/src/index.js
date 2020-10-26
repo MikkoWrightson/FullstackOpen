@@ -9,18 +9,27 @@ const Hello = (props) => {
   )
 }
 
+const Footer = () => {
+  return (
+    <div>
+      greeting app created by 
+      <a href="https://github.com/MikkoWrightson"> Mikko Wrightson</a>
+    </div>
+  )
+}
 
 
 const App = () => {
-  const nimi = 'Pekka'
-  const ika = 10
+  const name = 'Pekka'
+  const age = 10
 
   return (
-    <div>
-      <h1>Greetings!</h1>
+    <>
+      <h1>Greetings</h1>
       <Hello name="Maya" age={26 + 10} />
-      <Hello name={nimi} age={ika} />
-    </div>
+      <Hello name={name} age={age} />
+      <Footer />
+    </>
   )
 }
 ReactDOM.render(<App />, document.getElementById('root'))
