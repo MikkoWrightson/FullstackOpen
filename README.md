@@ -2,4 +2,4 @@
 
 Helsinki university FullstackOpen course
 
-fullstackopen.com
+www.fullstackopen.com
